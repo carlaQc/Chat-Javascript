@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Javascript FullStack</title>
+
+  <!-- FONT AWESOME -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+    integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
+    
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+
+<body style="background-image: url(/imagenes/portada4.jpg);">
+
+
+
+
+  
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark bg-danger">
+    <a class="navbar-brand mx-auto" href="/">
+      <p style="font-family: inherit; font-size: 25px;"><b>C&nbspH&nbspA&nbspT</b></p>
+    </a>
+  </nav>
+
+  <div class="container p-4">
+    <!-- NICKNAME FORM -->
+    <div id="nickWrap">
+      <div class="row">
+        <div class="col-md-4 mx-auto" >
+          <div class="card" style="border-radius: 10px;">
+            <div class="card-header" style="background-color:rgb(236, 236, 236); border-radius: 10px;" >
+              <h4>INGRESE SU NOMBRE DE USUARIO </h4>
+            </div>
+            <p id="nickError"></p>
+            <div class="card-body">
+              <form id="nickForm" >
+                <input id="nickname" type="text" class="form-control" autofocus placeholder="Ingrese su nombre de usuario" style="border-color: rgb(29, 158, 209);  "/>
+                <input type="submit" class="btn btn-danger btn-block mt-2" value="Enviar" />
+              </form>
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHAT CONTAINER -->
+    <div id="contentWrap">
+      <div class="row">
+
+       <!-- USERS SECTION-->
+     <div class="col-md-3">
+      <div class="card" style="border-radius: 5px;">
+        <div class="card-header bg-dark text-white">
+          <h4>U&nbspS&nbspU&nbspA&nbspR&nbspI&nbspO&nbspS</h4>
+        </div>
+        <div class="card-body">
+          <div id="usernames"></div>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-md-9">
+          <div class="card" style="border-radius: 5px;">
+            <!-- CARD HEADER-->
+            <div class="card-header bg-dark text-white">
+              <h4>¡H&nbspA&nbspB&nbspL&nbspE&nbspM&nbspO&nbspS!</h4>
+            </div>
+
+            <!-- CARD BODY-->
+            <div id="chat" class="card-body"></div>
+            
+
+            <!-- CARD FOOTER -->
+            <form id="message-form" class="card-footer">
+              <div class="input-group">
+                <input type="text" id="message" class="form-control" placeholder="Ingrese su mensaje" />
+                <div class="input-group-append">
+                  <button class="btn btn-danger">
+                    <i class="fas fa-location-arrow"></i> Enviar
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/main.js"></script>
+ 
+
+  </body>
+
+</html>
