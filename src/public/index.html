@@ -3,26 +3,21 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Chat Javascript FullStack</title>
+  <title>Chat Javascript</title>
 
   <!-- FONT AWESOME -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
     integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
     crossorigin="anonymous"></script>
-    
-  <!-- MAIN CSS -->
+
+      <!-- MAIN CSS -->
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/bootstrap.min.css"/>
 </head>
 
 <body style="background-image: url(/imagenes/portada4.jpg);">
-
-
-
-
-  
   <!-- NAVBAR -->
-  <nav class="navbar navbar-dark bg-danger">
+  <nav class="navbar navbar-dark ">
     <a class="navbar-brand mx-auto" href="/">
       <p style="font-family: inherit; font-size: 25px;"><b>C&nbspH&nbspA&nbspT</b></p>
     </a>
@@ -34,18 +29,17 @@
       <div class="row">
         <div class="col-md-4 mx-auto" >
           <div class="card" style="border-radius: 10px;">
-            <div class="card-header" style="background-color:rgb(236, 236, 236); border-radius: 10px;" >
+            <div class="card-header" style="background-color:rgb(54, 53, 53); border-radius: 10px; color: lavenderblush;" >
               <h4>INGRESE SU NOMBRE DE USUARIO </h4>
             </div>
             <p id="nickError"></p>
             <div class="card-body">
               <form id="nickForm" >
                 <input id="nickname" type="text" class="form-control" autofocus placeholder="Ingrese su nombre de usuario" style="border-color: rgb(29, 158, 209);  "/>
-                <input type="submit" class="btn btn-danger btn-block mt-2" value="Enviar" />
+                <input type="submit" class="btn btn-danger btn-block mt-2" style="background: linear-gradient(to right, rgba(14, 11, 11, 0.911), rgb(126, 21, 21),rgba(0, 0, 0, 0.911));" value="Enviar" />
               </form>
 
-              
-            </div>
+             </div>
           </div>
         </div>
       </div>
@@ -77,24 +71,21 @@
             <!-- CARD BODY-->
             <div id="chat" class="card-body"></div>
             
-
             <!-- CARD FOOTER -->
             <form id="message-form" class="card-footer">
               <div class="input-group">
-                <input type="text" id="message" class="form-control" placeholder="Ingrese su mensaje" />
+                <input type="text" id="message" class="form-control" placeholder="Ingrese su mensaje" style="border-color: rgb(76, 196, 218);" />
                 <div class="input-group-append">
-                  <button class="btn btn-danger">
-                    <i class="fas fa-location-arrow"></i> Enviar
+                  <button class="btn btn-danger" style="background: linear-gradient(to right, rgba(14, 11, 11, 0.911), rgb(126, 21, 21),rgba(0, 0, 0, 0.911));">
+                    <i class="fas fa-location-arrow" ></i> Enviar
                   </button>
                 </div>
               </div>
             </form>
           </div>
         </div>
-
       </div>
     </div>
-
   </div>
 
   <!-- SCRIPTS -->
@@ -102,8 +93,6 @@
     crossorigin="anonymous"></script>
   <script src="/socket.io/socket.io.js"></script>
   <script src="/js/main.js"></script>
- 
 
-  </body>
-
+   </body>
 </html>

@@ -1,4 +1,7 @@
 
+nav{
+/* The old syntax, deprecated, but still needed, prefixed, for Opera and WebKit-based browsers */ 
+background: linear-gradient(to right,  rgba(14, 11, 11, 0.911), rgb(126, 21, 21),rgba(14, 11, 11, 0.911));}
 
 #contentWrap {
   display: none;
